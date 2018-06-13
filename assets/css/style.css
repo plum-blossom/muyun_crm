@@ -1,0 +1,392 @@
+/*css reset*/
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*公共样式*/
+
+body {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background:url(../images/bg.jpg);
+}
+
+.content {
+    width: 900px;
+    margin: 5% auto;
+}
+
+
+nav {
+    padding: 10px;
+    float: left;
+    height: 100vh;
+    width: 15%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#nav {
+    width: 100%;
+    margin-top:15px;
+}
+
+#nav li:hover {
+    background: url(../images/arrow.png) no-repeat 98% 10px;
+    background-size: 30px;
+    color: #dce4f0;
+    font-size: 18px;
+}
+
+main {
+    width: 65%;
+    float: left;
+    height: 100%;
+    padding-top: 40px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 70%;
+}
+
+
+/*内容主体*/
+
+.content {
+    position: relative;
+    height: 100%;
+}
+
+.content>ul {
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.content>ul>li {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+}
+
+.content>ul.class_6>li,
+.content>ul.class_7>li {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.content>ul.class_1>li,
+.content>ul.class_2>li,
+.content>ul.class_4>li,
+.content>ul.class_10>li,
+.content>ul.class_11>li {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 20px;
+}
+
+.content>ul.class_5>li {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 20px;
+}
+
+.content>ul.class_6>li,
+.content>ul.class_7>li {
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    margin: 4px 8px;
+    font-size: 12px;
+}
+
+.content>ul.class_3>li {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    margin: 8px;
+}
+
+.content>ul.class_3>li:nth-child(16) {
+    margin-left: 166px;
+}
+
+.content>ul.class_8>li,
+.content>ul.class_9>li {
+    width: 78px;
+    height: 40px;
+    line-height: 40px;
+    margin: 8px;
+}
+
+.content>ul.class_8>li:nth-child(4),
+.content>ul.class_8>li:nth-child(12),
+.content>ul.class_8>li:nth-child(20),
+.content>ul.class_8>li:nth-child(28),
+.content>ul.class_9>li:nth-child(4),
+.content>ul.class_9>li:nth-child(12),
+.content>ul.class_9>li:nth-child(20),
+.content>ul.class_9>li:nth-child(28),
+.content>ul.class_9>li:nth-child(36) {
+    margin-right: 140px;
+}
+
+.content>ul.class_6>li:nth-child(4),
+.content>ul.class_7>li:nth-child(4),
+.content>ul.class_6>li:nth-child(13),
+.content>ul.class_7>li:nth-child(13),
+.content>ul.class_6>li:nth-child(22),
+.content>ul.class_7>li:nth-child(22),
+.content>ul.class_7>li:nth-child(31),
+.content>ul.class_6>li:nth-child(31),
+.content>ul.class_7>li:nth-child(40),
+.content>ul.class_6>li:nth-child(40),
+.content>ul.class_7>li:nth-child(49) {
+    margin-right: 100px;
+}
+
+.content>ul.class_6>li:nth-child(46) {
+    margin-left: 453px;
+}
+
+.content>ul.class_5>li:nth-child(26) {
+    margin-left: 324px;
+}
+
+
+.content>ul>li .info {
+    position: absolute;
+    top: -5px;
+    left: 110px;
+    width: 193px;
+    background-color: #fff;
+    z-index: 2;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    color: #000;
+}
+
+.stu_name,
+.tec_name {
+    width: 95px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    outheight: none;
+    margin-bottom: 10px;
+}
+
+.content>ul>li .info select {
+    margin: 10px 0;
+}
+
+.cancle {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: red;
+    color: #fff;
+}
+
+.ok {
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: #5ac1c0;
+}
+
+.close {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outheight: none;
+    background-color: #5ac1c0;
+    z-index: 10;
+}
+
+.content>ul>li .info h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: #000;
+}
+
+.content>ul>li .info span {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+
+.nav_active {
+    background: #fff;
+    border-radius: 5em;
+    color: #62c9c8;
+}
+
+.content>ul:first-child {
+    display: block;
+}
+
+
+/*登录模态框*/
+
+.dialog {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#quit,
+button {
+    cursor: pointer;
+    color: #fff;
+}
+
+.info button {
+    color: #fff;
+}
+
+.info input {
+    border: 1px solid #5ac1c0;
+    color: #000;
+    padding-left: 10px;
+}
+
+.dialog .form {
+    padding: 20px;
+    width: 260px;
+    height: 220px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -110px;
+    background: #fff;
+    border-radius: 7px;
+    color: #5ac1c0;
+}
+
+.dialog .form h4 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.dialog .form input,
+.dialog .form button {
+    margin: 10px 0;
+    outline: none;
+}
+
+.dialog .form label {
+    margin-right: 10px;
+}
+
+.dialog .form input {
+    border: 1px solid #5bc0de;
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.dialog .form button {
+    width: 260px;
+    height: 40px;
+    background-color: #5bc0de;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    color: #eee;
+}
+
+.tips {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background: url(../images/card.png) no-repeat;
+    background-size: 250px;
+    width: 145px;
+    padding-top: 180px;
+    padding-left: 60px;
+    font-size: 14px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+body {
+    min-width: 1280px !important;
+    overflow: scroll;
+}
